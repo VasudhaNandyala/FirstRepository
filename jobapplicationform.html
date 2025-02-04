@@ -8,29 +8,31 @@
 <body>
 <form action="">
 
+    <h1>Job Application Form</h1>
+
     <!--First Name(text type)-->
 
-    <label for="fn">First Name : </label>
+    <label for="fn">First Name : *</label><br>
     <input type="text" name="fn" id="fn" placeholder="First Name"><br><br>
 
     <!--Last Name(text type)-->
 
-    <label for="ln">Last Name : </label>
+    <label for="ln">Last Name : *</label><br>
     <input type="text" name="ln" id="ln" placeholder="Last Name"><br><br>
 
     <!--Email(email type)-->
 
-    <label for="email">Email : </label>
+    <label for="email">Email : *</label><br>
     <input type="email" name="email" id="email" placeholder="Enter your email"><br><br>
 
     <!--Contact Number(number type)-->
 
-    <label for="contact">Contact : </label>
+    <label for="contact">Contact : *</label><br>
     <input type="number" name="contact" id="number" placeholder="Mobile Number"><br><br>
 
     <!--Gender(Radio Button)-->
 
-    <label>Gender : </label>
+    <label>Gender : *</label><br>
     <input type="radio" id="male" name="gender" value="male">
     <label for="male">Male</label>
     <input type="radio" id="female" name="gender" value="female">
@@ -38,13 +40,14 @@
 
     <!--Date of birth(Date type)-->
 
-    <label for="date">Date of Birth</label>
+    <label for="date">Date of Birth *</label><br>
     <input type="date" id="date" name="date"><br><br>
 
     <!--Graduation degree(dropdown list)-->
 
-    <label for="degree">Graduation Degree : </label>
+    <label for="degree">Graduation Degree : *</label><br>
     <select name="degree" id="degree">
+        <option value=""></option>
         <option value="be/btech">B.E/B.Tech</option>
         <option value="b.sc">B.Sc</option>
         <option value="b.com">B.bom</option>
@@ -52,8 +55,9 @@
 
     <!--Specialization(dropdown list)-->
 
-    <label for="spec">Specialization</label>
+    <label for="spec">Specialization *</label><br>
     <select name="spec" id="spec">
+        <option value=""></option>
         <option value="CSE">CSE</option>
         <option value="AI&DS">AI&DS</option>
         <option value="AI&ML">AI&ML</option>
@@ -64,13 +68,14 @@
 
     <!--College name(text)-->
 
-    <label for="college">College Name : </label>
+    <label for="college">College Name : *</label><br>
     <input type="text" name="college" id="college" placeholder="college name"><br><br>
 
     <!--Passout Year(dropdown list)-->
 
-    <label for="passout">Passout Year : </label>
+    <label for="passout">Passout Year : *</label><br>
     <select name="passout" id="passout">
+        <option value=""></option>
         <option value="2020">2020</option>
         <option value="2021">2021</option>
         <option value="2022">2022</option>
@@ -80,7 +85,7 @@
 
     <!--Current Backlogs? (yes/No) (Radio button)-->
 
-    <label>Current Backlogs? </label>
+    <label>Current Backlogs? *</label><br>
     <input type="radio" name="backlogs" id="yes" value="yes">
     <label for="yes">Yes</label>
     <input type="radio" name="backlogs" id="no" value="no">
@@ -88,12 +93,12 @@
     
     <!--Graduation Percentage-->
 
-    <label for="percentage">Graduation Percentage : </label>
-    <input type="number" name="percentage" id="percentage" placeholder="%"><br><br>
+    <label for="percentage">Graduation Percentage : *</label><br>
+    <input type="number" name="percentage" id="percentage" placeholder="%" min="35" max="100"><br><br>
     
     <!--Willing to relocate?-->
 
-    <label>Willing to relocate?</label>
+    <label>Willing to relocate? *</label><br>
     <input type="radio" id="yes" name="relocate" value="yes">
     <label for="yes">Yes</label>
     <input type="radio" id="no" name="relocate" value="no">
@@ -101,8 +106,9 @@
 
     <!--Location Preference 1-->
 
-    <label for="location1">Location Preference 1 :</label>
+    <label for="location1">Location Preference 1 : *</label><br>
     <select name="location1" id="location1">
+        <option value=""></option>
         <option value="hyd">Hyderabad</option>
         <option value="chennai">Chennai</option>
         <option value="banglore">Banglore</option>
@@ -110,8 +116,9 @@
 
     <!--Location Preference 2-->
 
-    <label for="location2">Location Preference 2 :</label>
+    <label for="location2">Location Preference 2 :</label><br>
     <select name="location2" id="location2">
+        <option value=""></option>
         <option value="hyd">Hyderabad</option>
         <option value="chennai">Chennai</option>
         <option value="banglore">Banglore</option>
@@ -119,7 +126,7 @@
 
     <!--Upload Resume(file type)-->
 
-    <label for="resume">Upload Resume </label>
+    <label for="resume">Upload Resume *</label><br>
     <input type="file" name="resume" id="resume"><br><br>
 
     <!--Submit button-->
