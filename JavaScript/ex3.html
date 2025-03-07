@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let book = {
+            title: "1984",
+            author: "George Orwell"
+        };
+
+        function hasProperty(obj, key) {
+            return key in obj;
+        }
+
+        console.log(hasProperty(book, "title"));   // true
+        console.log(hasProperty(book, "year"));    // false
+    </script>
+</head>
+<body>
+    Example 3
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let animal={
+            walk(){
+                console.log("Animal walk");
+            }
+        };
+        let rabbit={
+            __proto__:animal
+        };
+        rabbit.walk=function(){
+            console.log("Rabbit hops");
+        }
+        rabbit.walk();
+        animal.walk();
+    </script>
+</head>
+<body>
+    Prototypal Overriding
+</body>
+</html>

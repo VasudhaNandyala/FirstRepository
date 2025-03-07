@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        let nandyala={
+            surname:'Nandyala'
+        }
+        let vasudha={
+            name:'Vasu' 
+        }
+
+        vasudha.__proto__=nandyala;
+        console.log(vasudha.name);
+        console.log(vasudha.surname);
+        console.log(vasudha.hasOwnProperty(name));
+        
+        //Prototypal chaining
+        let animal={
+            eats:true
+        }
+        let rabbit={
+            jumps:true
+        }
+        let longEar={
+            earLength:10
+        }
+
+        rabbit.__proto__=animal;
+        longEar.__proto__=rabbit;
+        console.log(animal.eats);
+        console.log(rabbit.jumps);
+        console.log(rabbit.eats);
+        console.log(longEar.earLength);
+        console.log(longEar.jumps);
+        console.log(longEar.eats);
+
+
+    </script>
+</head>
+<body>
+    Prototypal Inheritance
+</body>
+</html>

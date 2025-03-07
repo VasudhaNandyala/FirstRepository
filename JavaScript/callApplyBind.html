@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        obj1={
+            firstName:"Vasudha",
+            lastName:"Nandyala"
+        }
+        obj2={
+            firstName:"Janu",
+            lastName:"Nandyala"
+        }
+
+        function fun(arg1,arg2){
+            console.log(arg1+" "+this.firstName+" "+this.lastName+" "+arg2);
+        }
+
+        fun.call(obj1,"Hello","Hi");
+        fun.call(obj2,"Hello","Hi");
+        fun.apply(obj1,["Hello","Hi"]);
+        fun.apply(obj2,["Hello","Hi"]);
+        let obj1fun=fun.bind(obj1);
+        obj1fun("Hello","Hi");
+        let obj2fun=fun.bind(obj2);
+        obj2fun("Hello","Hi");
+    </script>
+</head>
+<body>
+    Call,Apply,Bind
+</body>
+</html>

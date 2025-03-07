@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="para">
+        This element has <span>Spacing</span>
+        <p style="display: none;">Hidden Text</p>
+    </div>
+    <script>
+        let myElement=document.getElementById("para");
+        let content=myElement.innerText;
+        console.log(content);
+        myElement.outerHTML="<h1>Hi</h1>";
+    </script>
+</body>
+
+</html>
